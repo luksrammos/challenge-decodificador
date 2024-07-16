@@ -1,1 +1,63 @@
-\\ teste
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <main>
+        <header class="cabecalho" >
+                <img src="./image/logo-alura.png" alt="logo da Alura no formato de um a  na cor branca">
+                <h1 class="deco">Decodificador de  Texto</h1>
+        </header>
+            <section class="container">
+                <div class="container-texto">
+                    <textarea 
+                    name="texto" 
+                    class="texto" 
+                    id="texto" 
+                    cols="30" 
+                    rows="10" 
+                    placeholder="Digite seu texto "
+                ></textarea>
+                </div>
+                <div class="termos">
+                    <img src="./image/error-icon.png" alt="logo de alerta de cor vermelho">
+                    <p>Apenas letras minúsculas e sim acentos</p>
+                </div>
+                <div class="container-botoes">
+                    <button 
+                    class="btn-criptografar" 
+                    type="button" 
+                    onclick="criptografar()">Criptografar
+                    </button>
+                    <button 
+                    class="btn-descriptografar" 
+                    type="button" 
+                    onclick="descriptografar()">Descriptografar
+                    </button>  
+                </div>
+            
+                <div class="criptografado">
+                    <img src="image/figura-com-lupa.jpg" alt="figura de desenho de um homem com uma grande lupa olhando para a esquerda" id="pesquisador" />
+                    <div class="mensagem-criptografado" id="mensagem-criptografado"> 
+                    <h3 id="titulo-mensagem">Nenhuma mensagem encontrada</h3>
+                        <p id="paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer class="rodape">
+        <a href="https://www.linkedin.com/in/samilmoret/" class="icon">
+            <img src="./image/linkedin-logo.png" alt="icone do linkedin">
+            <a href="https://github.com/SamilMoret" class="icon">
+                <img src="./image/github-logo.png" alt="icone do Github"> 
+        </a>
+        <p>Desenvolvido por Samil Moret 2024</p>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>

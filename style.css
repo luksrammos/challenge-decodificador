@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --cor-primeira:#369661;
+    --cor--segunda:#f3f5fc;
+    --cor--terca:#0a3871;
+    --cor--cuarta:#050505;
+    --cor--quinta:#ffffff;
+    --cor--sexta:#1d2124;
+    --cor--setima:#373b3f8f;
+
+    --font--primaria:"Inter", sans-serif; 
+    --font--secundaria: "Montserrat", sans-serif;
+} 
+
+body{
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font--primaria);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 1.3%;
+    font-family: var(--font--primaria);
+    color: var(--cor--quinta);
+    background: var(--cor--terca);
+}
+
+.cabecalho img {
+   max-width: 3rem;
+   max-height: 3rem;
+   width: 100%;
+   height: auto;
+   
+}
+
+.deco{
+    flex: 1;
+    text-align: center;
+}
+
+ .deco h1{
+    margin: 0;
+} 
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url("image/pexels-bram-bleux.jpg");
+}
+
+.texto {
+    position: absolute;
+    padding-left: 1.875rem;
+    padding-top: 1.875rem;
+    width: 42%;
+    height: 55%;
+    left: 12%;
+    top: 10%;
+    border: none;
+    font-family: var(--font--primaria);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+    border-radius: 2rem;
+    background-color: var(--cor--quinta);
+    box-shadow:  1.938rem -0.188rem 1.25rem 1.125rem var(--cor--setima);
+}
+
+.texto::placeholder {
+    color:var(--cor--terca);
+}
+
+.texto:focus,
+.texto:active {
+    border:none;
+    outline:none;
+}
+
+.termos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 0.5rem;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 75%;
+}
+
+.termos img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.termos p {
+    font-family: var(--font--secundaria);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: var(--cor--terca);
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0; 
+}
+
+.container-botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 13.5%;
+    top: 82%;
+}
+
+.btn-criptografar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    margin-right: 0.5rem;
+    gap: 0.5rem;
+    width: 25%;
+    background-color:var(--cor--terca);
+    border-radius: 1.5rem;
+    font-family: var(--font--primaria);
+    font-weight: 600; 
+    font-size: 20px;
+    line-height: 1.1875rem;
+    text-align: center;
+    color: var(--cor--quinta);
+    cursor: pointer;
+}
+
+.btn-descriptografar {
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 0.5rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 0.5rem;
+    width: 25%;
+    background: var(--cor--segunda);
+    border: 1px solid var(--cor--terca);
+    border-radius: 1.5rem;
+    font-family: var(--font--primaria);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.1875rem;
+    text-align: center;
+    color: var(--cor--terca);
+    cursor: pointer;
+}
+
+.btn-criptografar:hover,
+.btn-descriptografar:hover {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.criptografado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 25%;
+    height: 90%;
+    left: 61.5%;
+    top: 5%;
+    background: var(--cor--quinta);
+    box-shadow:  1.938rem -0.188rem 1.25rem 1.125rem var(--cor--setima);
+    border-radius: 32px;
+}
+
+.mensagem-criptografado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 1rem;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensagem-criptografado h3 {
+    width: 60%;
+    font-family: var(--font--secundaria);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+}
+
+.mensagem-criptografado p {
+    width: 80%;
+    font-family: var(--font--secundaria);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: center;
+    color: var(--cor--sexta);
+}
+
+.criptografado img {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    top:8%;  
+}
+
+.rodape {
+    display: fixed;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    color:var(--cor--quinta);
+    background: var(--cor--cuarta) ;
+    padding: 0.975rem;
+    text-align: center;
+    font-family: var(--font--primaria);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 0.625rem;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.625rem;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-texto {
+        width: 100%;
+    }
+
+    .texto {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 2%;
+    }
+
+    .termos {
+        width: 80%;
+        left: 10%;
+        top: 68%;
+    }
+
+    .termos p {
+        font-size: 1rem;
+    }
+
+    .container-botoes {
+        width: 83%;
+        left: 10%;
+        top: 73%;
+    }
+
+    .btn-criptografar,
+    .btn-descriptografar {
+        width: 48%;
+        border-radius: 1rem;
+    }
+
+    .btn-criptografar:hover,
+    .btn-descriptografar:hover {
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+
+    .criptografado {
+        width: 83%;
+        height: 20%;
+        left: 10%;
+        top: 83%;    
+    }
+
+    .mensagem-criptografado {
+        width: 80%;
+        top: 10%;
+    }
+
+    .mensagem-criptografado h3{
+        top:30%;
+    }
+
+    .criptografado img {
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+    .rodape {
+        margin-top: 5%;
+        padding-top: 1.875rem; 
+    }
+    
+}
+
+@media (min-width: 330px) and (max-width: 767px) {
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .container-texto {
+        width: 100%;
+    }
+    .texto { 
+        width: 74%;
+        height: 60%;
+        left: 10%;
+        top: 2%;
+    }
+    .termos {
+      left: 8%;
+      top:67%
+    }  
+    .termos p {
+        font-size: 100%;
+        color: #1519ff;
+    }
+    .container-botoes {
+        width: 80%;
+        left: 8%;
+        top: 71.5%
+    }
+    .btn-criptografar,
+    .btn-descriptografar {
+        width: 48%;
+        border-radius: 1rem ;
+    }
+    .btn-criptografar:hover,
+    .btn-descriptografar:hover {
+        margin: 0.3% ;
+        width: 47.5%;
+        padding:1.8% ;
+    }
+    .criptografado{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .mensagem-criptografado {
+        width: 100%;
+        top: 15%;
+    }
+    
+    .criptografado img {
+        top:0;
+        display: none;
+        visibility: hidden;
+    }
+
+    .rodape {
+        margin-top: 5%;
+        padding-top: 1.875rem; 
+    }
+    
+
+}
+
+
+
